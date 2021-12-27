@@ -60,19 +60,41 @@ while gameState == 2:
     user_input = input("""
     Your on your way back to Ringo from a hunting job. Nothing seem out of the ordinary. 
     As you get closer you begin to notice that the sky is getting darker and the smell 
-    of smoke is gradually getting stronger and the sense that something is wrong gets
+    of smoke is gradually getting stronger while the sense that something is wrong gets
     overwhelms you.
-    \nPlayer Options: \n1) Run to the village\n:""")
+    
+    What do you do?
+    
+    \nPlayer Options: \n1) Run back to the village\n:""")
     if user_input.lower() == "run back to the village":
         gameState = 2.1
+    else:
+        print("Enter a viable option")
 
 while gameState == 2.1:
     user_input = input("""
     You've finally arrived at Ringo to see your village Up in smoke, fire going as far 
     as the eye can see. The village guardians on the ground dead along with villagers 
-    either dead or seriously injured. You hear a desperate scream for help East of the Village Gate. 
-    You run towards the scream to find a couple of masked assailants covered in blood wielding
-    Swords. What do you do?
-    \nPlayer Options: \n1) \n:""")
-    if user_input.lower() == "run":
+    either dead or seriously injured. You hear a desperate scream for help East off of 
+    the Village Gate. 
+    
+    What do you do?
+    \nPlayer Options: \n1) Run and help them\n:""")
+
+    if user_input.lower() == "run and help them":
         gameState = 2.2
+    else:
+        print("Enter a viable option")
+
+while gameState == 2.2:
+    user_input = input("""
+    You run towards the scream to find a couple of masked assailants covered in blood wielding
+    Swords. About to attack a mother and her child. 
+    
+    What do you do?
+
+    What do you do?
+    \nPlayer Options: \n1) Run and help them\n:""")
+
+    if user_input.lower() == "run and help them":
+        gameState = 2.3
