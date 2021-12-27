@@ -88,13 +88,13 @@ while gameState == 2.1:
 
 while gameState == 2.2:
     user_input = input("""
-    You run towards the scream to find a couple of masked assailants covered in blood wielding
-    Swords. About to attack a mother and her child. 
+    You run towards the screams to find a group of three masked assailants covered in blood wielding
+    Swords about to attack a mother and her child. 
     
     What do you do?
 
     What do you do?
-    \nPlayer Options: \n1) Run and help them\n:""")
+    \nPlayer Options: \n1) Plead for their safety\n2) Nothing\n Pick up a Spear\n:""")
 
-    if user_input.lower() == "run and help them":
-        gameState = 2.3
+    if user_input.lower() == "plead for their safety":
+        print("They kill them in front of you")
