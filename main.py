@@ -11,11 +11,11 @@ player1 = {'Name': 'Murai', 'Health': 100, 'Level': 0, 'Exp': 0}
 # Inventory
 
 # Weapons
-playerWeapon1 = {'Weapon1': 'W1', 'AttackPower': '0'}
+primaryWeapon1 = {'Weapon1': 'W1', 'AttackOne': 0, 'AttackTwo': 0, 'AttackThree': 0}
 
-playerWeapon2 = {'Weapon2': 'W2', 'AttackPower': '0'}
+playerWeapon2 = {'Weapon2': 'W2', 'AttackOne': 0, 'AttackTwo': 0, 'AttackThree': 0}
 
-playerWeapon3 = {'Weapon2': 'W3', 'AttackPower': '0'}
+playerWeapon3 = {'Weapon3': 'W3', 'AttackOne': 0, 'AttackTwo': 0, 'AttackThree': 0}
 
 # Health
 playerHealthItemSmall = {'Med-kit': 'Small Med-kit', 'Plus Health': 30}
@@ -60,8 +60,8 @@ while gameState == 2:
     user_input = input("""
     Your on your way back to Ringo from a hunting job. Nothing seem out of the ordinary. 
     As you get closer you begin to notice that the sky is getting darker and the smell 
-    of smoke is gradually getting stronger while the sense that something is wrong gets
-    overwhelms you.
+    of smoke is gradually getting stronger. The sense that something is wrong begins
+    overwhelm you.
     
     What do you do?
     
@@ -79,22 +79,39 @@ while gameState == 2.1:
     the Village Gate. 
     
     What do you do?
-    \nPlayer Options: \n1) Run and help them\n:""")
+    \nPlayer Options: \n1) Run towards the screams\n:""")
 
-    if user_input.lower() == "run and help them":
+    if user_input.lower() == "run towards the screams":
         gameState = 2.2
     else:
         print("Enter a viable option")
 
 while gameState == 2.2:
     user_input = input("""
-    You run towards the screams to find a group of three masked assailants covered in blood wielding
-    Swords about to attack a mother and her child. 
+    You've run towards the screams to find a group of three masked assailants covered in blood wielding
+    Swords about to attack a mother and her child. There are three weapons in close proximity to you.
+    A Sword, Spear, and a Dagger.
     
-    What do you do?
+    Which weapon do you pick up?
+    \nPlayer Options: \n1) Sword\n2) Spear\n Dagger\n:""")
 
-    What do you do?
-    \nPlayer Options: \n1) Plead for their safety\n2) Nothing\n Pick up a Spear\n:""")
+# Sword
+    if user_input.lower() == "sword":
+        primaryWeapon1['Weapon1'] = 'Sword'
+        primaryWeapon1['AttackOne'] = 30
+        primaryWeapon1['AttackTwo'] = 25
+        primaryWeapon1['AttackThree'] = 35
+# Spear
+    if user_input.lower() == "spear":
+        primaryWeapon1['Weapon1'] = 'Spear'
+        primaryWeapon1['AttackOne'] = 30
+        primaryWeapon1['AttackTwo'] = 25
+        primaryWeapon1['AttackThree'] = 35
+# Dagger
+    if user_input.lower() == "dagger":
+        primaryWeapon1['Weapon1'] = 'Sword'
+        primaryWeapon1['AttackOne'] = 30
+        primaryWeapon1['AttackTwo'] = 25
+        primaryWeapon1['AttackThree'] = 35
 
-    if user_input.lower() == "plead for their safety":
-        print("They kill them in front of you")
+
