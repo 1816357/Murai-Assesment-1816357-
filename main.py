@@ -69,8 +69,8 @@ while gameState == 2:
 while gameState == 2.1:
     user_input = input("""
     You've finally arrived at Ringo to see your village Up in smoke, fire going as far 
-    as the eye can see. The village guardians on the ground dead along with the villagers 
-    either dead or seriously injured. You hear a desperate scream for help near by. 
+    as the eye can see. The village guardians on the ground dead along with villagers 
+    either dead or seriously injured. You hear a desperate scream for help East of the Village Gate. 
     You run towards the scream to find a couple of masked assailants covered in blood wielding
     Swords. What do you do?
     \nPlayer Options: \n1) \n:""")
